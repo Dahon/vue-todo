@@ -1,0 +1,69 @@
+@import 'variables';
+@import 'typography';
+
+body {
+	display: flex;
+	font-size: 14px;
+	flex-direction: column;
+	flex: 1;
+	padding: 0;
+	margin: 0;
+	//overflow-x: hidden;
+}
+
+.wrapper {
+	position: relative;
+	min-height: 100vh;
+  max-width: $page-width-max;
+  margin-left: auto;
+  margin-right: auto;
+	padding-top: 40px;
+	padding-bottom: 48px;
+
+	&-sub {
+		position: relative;
+		padding-top: 58px;
+		padding-bottom: 48px;
+		min-height: calc(100vh - 78px);
+	}
+}
+
+.btn {
+	border-radius: 3px;
+	border: 0;
+	text-decoration: none;
+	align-items: center;
+	background-color: $main-blue;
+	box-shadow: none;
+	color: #FFFFFF;
+	margin: 0 4px 0 0;
+	padding: 0 16px;
+	white-space: nowrap;
+	cursor: pointer;
+	font-weight: 500;
+
+	&:hover {
+		background-color: $blue-hover;
+	}
+}
+
+.modal-body {
+	padding: 24px;
+	padding-bottom: 36px;
+	font-size: 18px;
+
+	h2 {
+		margin-bottom: 20px;
+	}
+
+	.title-input {
+		font-size: 18px;
+		width: 100%;
+		margin-bottom: 24px;
+	}
+
+	button {
+		font-size: 18px;
+		margin-right: 20px;
+	}
+}

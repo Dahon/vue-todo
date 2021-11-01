@@ -1,0 +1,159 @@
+/*----------------------------------------------------------------*/
+/*  Typography
+/*----------------------------------------------------------------*/
+
+html, body, input {
+	font-family: "Montserrat", Roboto, "Helvetica Neue", sans-serif !important;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: auto;
+	color: $main-dark;
+}
+
+html {
+	font-size: 100%;
+	font-style: normal;
+	font-weight: normal;
+	text-rendering: optimizeLegibility;
+	-webkit-font-smoothing: antialiased;
+	line-height: 1.4;
+}
+
+// Headings
+h1, h2, h3, h4, h5, h6,
+.h1, .h2, .h3, .h4, .h5, .h6 {
+	color: $main-dark;
+	margin: 0;
+}
+
+// Text format helpers
+.text-italic {
+	font-style: italic;
+}
+
+.text-semibold {
+	font-weight: 600;
+}
+
+.text-bold, strong {
+	font-weight: 700;
+}
+
+.text-strike {
+	text-decoration: line-through;
+}
+
+.text-super {
+	vertical-align: super;
+}
+
+.text-sub {
+	vertical-align: sub;
+}
+
+.text-capitalize {
+	text-transform: capitalize;
+}
+
+.text-lowercase {
+	text-transform: lowercase;
+}
+
+.text-uppercase {
+	text-transform: uppercase;
+}
+
+.text-underline {
+	text-decoration: underline;
+}
+
+.link-none {
+	text-decoration: none;
+}
+
+// Text align helpers
+.text-left {
+	text-align: left;
+}
+
+.text-center {
+	text-align: center;
+}
+
+.text-right {
+	text-align: right;
+}
+
+// Font weight helpers
+@for $weight from 1 through 9 {
+
+	.font-weight-#{$weight * 100} {
+		font-weight: #{$weight * 100};
+	}
+}
+
+// Font size helpers
+@for $size from 1 through 60 {
+
+	.font-size-#{$size * 2} {
+		font-size: #{$size * 2}px;
+	}
+}
+
+// Line height helpers
+@for $lineHeight from 1 through 60 {
+
+	.line-height-#{$lineHeight * 2} {
+		line-height: #{$lineHeight * 2}px;
+	}
+}
+
+// Boxed text
+.text-boxed {
+	border-radius: 2px;
+	padding: 4px 8px;
+	margin: 0 8px;
+	font-size: 11px;
+	font-weight: 500;
+	color: rgba(0, 0, 0, 0.54);
+	background-color: rgba(0, 0, 0, 0.12);
+	white-space: nowrap;
+}
+
+// Boxed text light
+.text-boxed-light {
+	@extend .text-boxed;
+	background-color: rgba(255, 255, 255, 0.7);
+}
+
+// Truncate
+.text-truncate {
+	display: block;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+}
+
+// Nowrap
+.text-nowrap {
+	white-space: nowrap;
+}
+
+.block-nowrap {
+	flex-wrap: nowrap !important;
+}
+
+a {
+	color: rgba($main-blue, .9);
+	&:hover {
+		color: rgba($main-blue, 1);
+	}
+	&.active {
+		color: rgba($main-blue, 1);
+	}
+}
+
+//chrome autocomplete
+input:-webkit-autofill {
+	-webkit-box-shadow: 0 0 0 100px #E4F1FD inset;
+	-webkit-text-fill-color: $main-blue;
+}

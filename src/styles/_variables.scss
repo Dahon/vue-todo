@@ -1,0 +1,52 @@
+$main-white: 							#ffffff;
+$main-bg: 								#f4f8f9;
+
+// text color
+$main-dark: 							#042c47;
+$main-gray: 							rgba($main-dark, 0.5);
+$main-light-gray: 				rgba($main-dark, 0.3);
+
+$main-darkblue: 					#0067af;
+$main-blue: 							#4da1ff;
+$main-purple: 						#9013fe;
+$main-darkpurple: 			  #5E2563;
+$main-dark-red: 					#d0021b;
+$main-red: 								#ff6262;
+$main-yellow: 						#f8e71c;
+$main-orange: 						#f5a623;
+$main-green: 							#7ed321;
+
+$blue-hover:							rgba($main-blue, 0.8);
+$blue-active:							rgba($main-blue, 0.5);
+
+$table-stripe:							rgba($main-darkblue, 0.02);
+
+$main-disabled: 					#eff6ff;
+$border: 									#979797;
+$border-light: 						rgba($border, 0.1);
+
+
+// Defining values
+$page-width-max: 860px;
+
+$screen-xs-min: 321px;
+$screen-xxs-max: ($screen-xs-min - 1);
+$screen-sm-min: 600px;
+$screen-xs-max: ($screen-sm-min - 1);
+$screen-ipad-min: 768px;
+$screen-ipad-max: ($screen-ipad-min - 1);
+$screen-md-min: 960px;
+$screen-sm-max: ($screen-md-min - 1);
+$screen-lg-min: 1280px;
+$screen-md-max: ($screen-lg-min - 1);
+$screen-xl-min: 1920px;
+$screen-lg-max: ($screen-lg-min - 1);
+
+/* Usage
+@media (max-width: $screen-xs-max) { ... }
+@media (min-width: $screen-sm-min) { ... }
+@media (max-width: $screen-sm-max) { ... }
+@media (min-width: $screen-md-min) { ... }
+@media (max-width: $screen-md-max) { ... }
+@media (min-width: $screen-lg-min) { ... }
+*/
